@@ -16,6 +16,10 @@ body {
   position: absolute;
 }
 
+#bird {
+  position: absolute;
+}
+
 #fishbowl {
   overflow: hidden;
   margin: auto;
@@ -24,14 +28,16 @@ body {
   bottom: 0;
   right: 0;
   width: 500px;
-  height: 500px;
+  height: 400px;
   position: absolute;
+  background-color: #dde8e7;
+  transition: ease-in-out 5s background-color;
 }
 
 #window {
   margin: auto;
   width: 500px;
-  height: 500px;
+  height: 400px;
   position: relative;
   border: 0.5px solid white;
 }

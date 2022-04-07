@@ -1,6 +1,33 @@
 let current_cloud_left = 0;
 let current_cloud1_left = 0;
 
+let bird_flying_stage = 1;
+let bird_left = 0;
+
+let day = true;
+
+function dayAndNight () {
+  if (day === true) {
+    day = false;
+    wind.pause();
+    night.play();
+
+    fishbowl.style.backgroundColor = "black";
+  }
+
+  else {
+    day = true;
+    night.pause();
+    wind.play();
+
+    fishbowl.style.backgroundColor = "#dde8e7";
+  }
+}
+
+function weather () {
+  
+}
+
 function animateCloud () {
   current_cloud_left += 0.05;
   current_cloud1_left += 0.001;
@@ -17,10 +44,32 @@ function animateCloud () {
   }
 }
 
+/*
+function animateBird () {
+  bird_left += 5;
+  bird.style.left = bird_left + "px";
+  
+  if (bird_flying_stage === 1) {
+    bird_flying_stage = 2;
+    bird.src = "/src/www/image/bird/flying2.png";
+  }
+
+  else {
+    bird_flying_stage = 1;
+    bird.src = "/src/www/image/bird/flying1.png";
+  }
+}
+*/
+
 try {
   setInterval(animateCloud, 10);
+  setInterval(dayAndNight, 300000)
 }
 
 catch (error) {
   alert(error);
+}
+
+document.body.onclick = function () {
+  wind.play();
 }
