@@ -15,7 +15,11 @@ function fireFlyAnimation () {
     $("#fireflies").fadeOut(3000);
 
     setTimeout(function () {
-      $("#fireflies").fadeIn(3000);
+      fireflies.style.left = Math.floor(Math.random() * 450) + "px";
+
+      setTimeout(function () {
+        $("#fireflies").fadeIn(3000);
+      }, 1000);
     }, 3000);
   }
 }
@@ -34,6 +38,8 @@ function dayAndNight () {
     day = true;
     night.pause();
     wind.play();
+
+    fireflies.style.left = Math.floor(Math.random() * 450) + "px";
 
     fishbowl.style.backgroundColor = "#dde8e7";
     $("#fireflies").fadeOut(5000);
