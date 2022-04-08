@@ -6,6 +6,20 @@ let bird_left = 0;
 
 let day = true;
 
+function fireFlyAnimation () {
+  if (day === true) {
+    // Return none
+  }
+
+  else {
+    $("#fireflies").fadeOut(3000);
+
+    setTimeout(function () {
+      $("#fireflies").fadeIn(3000);
+    }, 3000);
+  }
+}
+
 function dayAndNight () {
   if (day === true) {
     day = false;
@@ -65,7 +79,8 @@ function animateBird () {
 
 try {
   setInterval(animateCloud, 10);
-  setInterval(dayAndNight, 300000)
+  setInterval(dayAndNight, 300000);
+  setInterval(fireFlyAnimation, 5000);
 }
 
 catch (error) {
