@@ -86,7 +86,7 @@ function animateBird () {
 try {
   setInterval(animateCloud, 10);
   setInterval(dayAndNight, 300000);
-  setInterval(fireFlyAnimation, 6000);
+  setInterval(fireFlyAnimation, 8000);
 }
 
 catch (error) {
