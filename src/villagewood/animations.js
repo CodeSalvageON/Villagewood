@@ -13,6 +13,7 @@ function dayAndNight () {
     night.play();
 
     fishbowl.style.backgroundColor = "black";
+    $("#fireflies").fadeIn(5000);
   }
 
   else {
@@ -21,6 +22,7 @@ function dayAndNight () {
     wind.play();
 
     fishbowl.style.backgroundColor = "#dde8e7";
+    $("#fireflies").fadeOut(5000);
   }
 }
 
