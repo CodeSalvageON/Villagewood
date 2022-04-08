@@ -1,5 +1,5 @@
 # Villagewood
-A snowglobe that learns and grows.
+A snowglobe for your webpage.
 
 ## Credits
 <p>Sound Effects are from Soundbible, recorded by "Mike Koenig" under Attribution 3.0 License</p>
