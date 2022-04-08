@@ -20,7 +20,7 @@ function fireFlyAnimation () {
       setTimeout(function () {
         $("#fireflies").fadeIn(3000);
       }, 1000);
-    }, 3000);
+    }, 4000);
   }
 }
 
@@ -86,7 +86,7 @@ function animateBird () {
 try {
   setInterval(animateCloud, 10);
   setInterval(dayAndNight, 300000);
-  setInterval(fireFlyAnimation, 5000);
+  setInterval(fireFlyAnimation, 6000);
 }
 
 catch (error) {
